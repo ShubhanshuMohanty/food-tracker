@@ -1,13 +1,16 @@
-import React from 'react'
-import IngredientsInput from './components/searches/IngredientsInput'
-import RecipesList from './components/recipes/RecipesList'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Home } from "./pages"
+import NotFoundPage from "./pages/NotFoundPages"
+
 
 function App() {
   return (
-    <div>
-      <IngredientsInput/>
-      <RecipesList/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
