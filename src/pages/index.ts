@@ -1,5 +1,6 @@
 import Home from "./Home";
-
+import FullRecipesPage from "./FullRecipesPage";
 export {
-    Home
+    Home,
+    FullRecipesPage
 }

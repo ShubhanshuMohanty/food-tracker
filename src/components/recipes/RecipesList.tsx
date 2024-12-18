@@ -64,9 +64,11 @@ function RecipesList() {
                 className="bg-white dark:bg-gray-800 text-black dark:text-gray-200 rounded shadow-lg p-4"
             >
                 <Card 
+                    id={recipe.id}
                     image={recipe.image} 
                     name={recipe.title} 
                     ingredients={recipe.ingredients} 
+                    
                 />
             </div>
         ))}

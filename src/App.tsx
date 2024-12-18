@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home } from "./pages"
+import { FullRecipesPage, Home } from "./pages"
 import NotFoundPage from "./pages/NotFoundPages"
 
 
@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/recipe/:id" element={<FullRecipesPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   image: string;
   name: string;
   ingredients: string[];
+  id:number;
 }
 
-const Card: React.FC<CardProps> = ({ image, name, ingredients }) => {
+const Card: React.FC<CardProps> = ({ image, name, ingredients ,id}) => {
+  useEffect(()=>{
+    console.log("sm=id=" + id);
+    
+  })
   return (
     <div className=" text-black dark:text-white  transition-all duration-300">
       {/* Image */}
@@ -30,6 +36,7 @@ const Card: React.FC<CardProps> = ({ image, name, ingredients }) => {
           </span>
         ))}
       </div>
+        <Link to={`recipe/${id}`}>See recipe</Link>
     </div>
   );
 };
