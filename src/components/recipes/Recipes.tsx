@@ -69,9 +69,9 @@ interface RecipeData {
   analyzedInstructions: Instruction[];
 }
 
-interface RecipePageProps {
-  recipeData: RecipeData;
-}
+// interface RecipePageProps {
+//   recipeData: RecipeData;
+// }
 
 const RecipePage: React.FC = () => {
   const [recipeData, setRecipeData] = useState<RecipeData | null>(null);
