@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Clock, Users, ChefHat, Leaf, Badge } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Nutrition from './Nutrition';
 
 interface Measure {
   amount: number;
@@ -153,8 +154,9 @@ const RecipePage: React.FC = () => {
                 ))}
               </ul>
             </div>
+            <Nutrition/>
           </div>
-
+          
           {/* Instructions Section */}
           <div className="lg:col-span-2">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">

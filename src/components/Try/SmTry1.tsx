@@ -60,6 +60,7 @@ const IngredientSearch: React.FC = () => {
   };
   useEffect(()=>{
     console.log("data",ingridients_data);
+    fetchSuggestions("chicken");
   },[])
   return (
     <div>
