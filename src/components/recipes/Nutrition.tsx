@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Flame,Wheat as Pizza, Droplet, Beef as Egg } from 'lucide-react'; // Correct icons
+import { Flame,Wheat as Pizza, Droplet, Beef as Egg ,LucideIcon} from 'lucide-react'; // Correct icons
 
 // Update NutritionDetail to allow value to be string or number
 interface NutritionDetail {
@@ -10,7 +10,7 @@ interface NutritionDetail {
   unit: string;
   bg: string;
   color: string;
-  icon: React.ComponentType<{ size: number }>;
+  icon: LucideIcon;
 }
 
 function Nutrition() {
