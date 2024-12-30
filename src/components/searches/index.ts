@@ -1,5 +1,6 @@
 import IngredientsInput from "./IngredientsInput";
-
+import GeminiTry from "./GeminiTry";
 export {
-    IngredientsInput
+    IngredientsInput,
+    GeminiTry
 }
